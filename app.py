@@ -15,8 +15,8 @@ def get_weather_data(city):
     print(r)
     return r
 
-@app.route('/prueba')
-def Prueba():
+@app.route('/CLIMA')
+def CLIMA():
     clima= get_weather_data('Daule')
     temperatura=str (clima['main']['temp'])
     descripcion=str (clima['weather'][0]['description'])
